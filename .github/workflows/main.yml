@@ -27,7 +27,7 @@ jobs:
         script: |
           cd ~/a3-bulldoguk-boilerplate
           export APOS_RELEASE_ID=boilerplate2021
-          git pull https://${{ secrets.PAT }}:x-oauth-basic@github.com/bulldoguk/a3-bulldoguk-boilerplate.git main
+          git pull https://github.com/bulldoguk/a3-bulldoguk-boilerplate.git main
           npm install
           npm run build
           pm2 start
