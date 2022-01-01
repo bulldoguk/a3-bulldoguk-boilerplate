@@ -6,8 +6,8 @@
   "scripts": {
     "start": "node app",
     "dev": "nodemon",
-    "build": "NODE_ENV=production node app @apostrophecms/asset:build",
-    "serve": "NODE_ENV=production node app",
+    "build": "NODE_ENV=production PORT=3040 node app @apostrophecms/asset:build",
+    "serve": "NODE_ENV=production PORT=3040 node app",
     "release": "npm install && npm run build && node app @apostrophecms/migration:migrate"
   },
   "nodemonConfig": {
